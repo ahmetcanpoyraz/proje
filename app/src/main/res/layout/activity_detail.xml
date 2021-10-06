@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_detail_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/likeButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/ic_fav_outline"
+            android:layout_marginBottom="18dp"
+             />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_detail_nameOfGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_detail_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:inputType="date|text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_detail_metacritic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:text="" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        >
+
+
+    <TextView
+        android:id="@+id/text_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+
+        android:text=""
+        />
+    </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
